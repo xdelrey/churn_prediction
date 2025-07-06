@@ -1,0 +1,6 @@
+fecha,modelo,params,precision,recall,accuracy,auc
+2025-07-06,Baseline_Logistic_Regression,"{'C': 10, 'solver': 'liblinear'}",0.4769503546099291,0.7842565597667639,0.7381121362668559,0.8429580623458175
+2025-07-06,RandomForest,"{'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 600}",0.5446623093681917,0.7288629737609329,0.7856635911994322,0.848452567840323
+2025-07-06,XGBoost Classifier,"{'learning_rate': 0.015, 'max_depth': 3, 'n_estimators': 400}",0.47959183673469385,0.8221574344023324,0.7395315826827538,0.846499816758652
+2025-07-06,XGBoost Classifier Threshold 0.46,"{'learning_rate': 0.015, 'max_depth': 3, 'n_estimators': 400}",0.47096774193548385,0.8513119533527697,0.7310149041873669,0.846499816758652
+2025-07-06,XGBoost Classifier,"{'learning_rate': 0.015, 'max_depth': 3, 'n_estimators': 400}",0.47959183673469385,0.8221574344023324,0.7395315826827538,0.846499816758652
