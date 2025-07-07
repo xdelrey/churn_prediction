@@ -18,24 +18,24 @@ Detectar con antelación qué clientes abandonarán el servicio permite dirigir 
 
 ## 🔍 Proceso de trabajo
 
-1. **Exploración inicial & EDA**
+1. Exploración inicial & EDA
    - Distribuciones, correlaciones, desequilibrio de clases. 📊
-2. \*\*Limpieza & \*\****Feature Engineering*** 🧹
-   - Conversión de binarias y cuasi‑binarias a 0/1.
+2. Limpieza & _Feature Engineering_ 🧹
+   - Conversión de binarias y "cuasi‑binarias" a 0/1.
    - Agrupación de categorías "No internet/phone service" → "No".
    - Conversión de `gender` a numérica.
    - Eliminación de `customerID`.
    - Normalización de variables numéricas.
    - Manejo de nulos (11 en `TotalCharges` → 0 donde `tenure = 0`).
-3. **Modelado** 🤖
-   - **Regresión Logística** (baseline).
-   - **Random Forest**.
+3. Modelado 🤖
+   - Regresión Logística (baseline).
+   - Random Forest.
    - **XGBoost** (con y sin ajuste de *threshold*).
-4. **Evaluación**
+4. Evaluación
    - *Accuracy*, *Precision*, *Recall*, AUC‑ROC.
    - Ajuste de *threshold* (0.46) para mejorar *Recall*.
-5. **Despliegue** 🚀
-   - API & demo en **Streamlit** (`app_streamlit/`).
+5. Despliegue _(pendiente)_
+   - API & demo en Streamlit (`app_streamlit/`).
 
 ## 📊 Resultados
 
@@ -66,41 +66,16 @@ churn_prediction/
 │   ├── churn_model.py             # Clase predictora
 │   ├── data_processing.py         # Pipeline de limpieza
 │   ├── training.py                # Entrenamiento
-│   └── evaluation.py              # Métricas & plots
+│   └── evaluation.py              # Métricas
 └── README.md                      # (este documento)
-```
-
-## ⚙️ Instalación rápida
-
-```bash
-# 1) Clonar el repo
-$ git clone https://github.com/tu‑usuario/churn_prediction.git
-$ cd churn_prediction
-
-# 2) Crear entorno (Conda)
-$ conda env create -f environment.yml
-$ conda activate churn‑ml
-
-# 3) Arrancar la app Streamlit
-$ streamlit run app_streamlit/app.py
-```
-
-## 🚀 Uso en producción
-
-```python
-from src.churn_model import ChurnModel
-
-model = ChurnModel.load('models/final_model_3_grid_xgb_v5.pkl')
-prob = model.predict_proba(cliente)  # devuelve probabilidad de baja
 ```
 
 ## 🗒️ Pendientes / Próximos pasos
 
-- Hiper‑ajuste de XGBoost con Optuna.
-- *SMOTE* o *Class Weights* para reequilibrar clases.
-- Feature: consumo de streaming, soporte técnico, etc.
-- Integración CI/CD y despliegue en Docker/Kubernetes.
-- Dashboard de métricas para negocio.
+- Mejora en el balanceo del _Target_.
+- Profundizar en _Feature Engineering_ para disminuir el número de _Features_.
+- Desarrollar nuevos modelos.
+- Aplicación Streamlit.
 
 ---
 
