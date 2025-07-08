@@ -1,8 +1,7 @@
-pathlib
-sys
-pickle
-joblib
-numpy
-pandas
-streamlit
-matplotlib.pyplot
+streamlit==1.35.*
+pandas>=2.2
+numpy>=1.24
+matplotlib>=3.8
+scikit-learn>=1.4
+xgboost>=2.0
+joblib>=1.4
