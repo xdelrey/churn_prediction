@@ -72,7 +72,7 @@ churn_prediction/
 
 ## 🌍 App Demo
 
-- [Streamlit App](https://churn-prediction-cprc.onrender.com/)  
+- [Streamlit App en Render](https://churn-prediction-cprc.onrender.com/)  
 
 ## 🗒️ Pendientes / Próximos pasos
 
