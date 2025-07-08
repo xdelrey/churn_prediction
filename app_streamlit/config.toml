@@ -1,0 +1,15 @@
+# .streamlit/config.toml
+[theme]
+# Hereda de la paleta clara de Streamlit
+base                          = "light"
+
+# Colores estilo “Anthropic”
+primaryColor                  = "#2544D8"   # Botones y acentos
+backgroundColor               = "#FFFFFF"   # Fondo principal
+secondaryBackgroundColor      = "#F6F7F9"   # Paneles, widgets, code blocks
+textColor                     = "#1A1F36"   # Texto principal
+borderColor                   = "#E0E4EA"   # Bordes y separadores
+borderRadius                  = 6           # Esquinas redondeadas (px)
+
+# Tipografía
+font                          = "sans serif"   # (“sans serif”, “serif” o “monospace”)
