@@ -70,12 +70,15 @@ churn_prediction/
 └── README.md                      # (este documento)
 ```
 
+## 🌍 App Demo
+
+- [Streamlit App](https://churn-prediction-cprc.onrender.com/)  
+
 ## 🗒️ Pendientes / Próximos pasos
 
 - Mejora en el balanceo del _Target_.
 - Profundizar en _Feature Engineering_ para disminuir el número de _Features_.
 - Desarrollar nuevos modelos.
-- Aplicación Streamlit.
 
 ---
 
