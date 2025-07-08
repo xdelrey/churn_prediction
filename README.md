@@ -34,8 +34,8 @@ Detectar con antelación qué clientes abandonarán el servicio permite dirigir 
 4. Evaluación
    - *Accuracy*, *Precision*, *Recall*, AUC‑ROC.
    - Ajuste de *threshold* (0.46) para mejorar *Recall*.
-5. Despliegue _(pendiente)_
-   - API & demo en Streamlit (`app_streamlit/`).
+5. Despliegue
+   - API & demo (Streamlit).
 
 ## 📊 Resultados
 
